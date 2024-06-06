@@ -1,6 +1,3 @@
-console.log('Here is : ', 'array')
-
-
 
 /*
 1
@@ -430,12 +427,12 @@ Ex: evenIndexOddLength(strings) => ["madrasa"]
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
 */
-let array =["alex","mercer","madrasa","rashed2","emad","hala"]
+var array =["alex","mercer","madrasa","rashed2","emad","hala"]
 function evenIndexOddLength(array){;
 
     let array2=[];
-for(let o=0;o<array.length;o+2)
-    if(array[o] %2!==0){
+for(let o=0;o<array.length;o+=2)
+    if(array[o].length %2!==0){
     array2.push(array[o]);
     }
     console.log(array2)
@@ -454,7 +451,7 @@ Ex: powerElementIndex(nums) => [0, 5, 16, 27, 16, 100000]
 **try more cases by your self
 */
 var nums= [44, 5, 4, 3, 2, 10]
-function powerElementIndex(nums){
+function powerElementIndex(array){
     let array2=[];
 for(let o=0;o<array.length;o++){
     array2.push(((array[o])*(array[o])*(array[o])));
@@ -484,7 +481,7 @@ let array =[5,2,2,1,8,66,55,77,34,9,55,1]
 function evenIndexOddLength(array){;
 
     let array2=[];
-for(let o=0;o<array.length;o+2)
+for(let o=0;o<array.length;o+=2)
     if(array[o] %2==0){
     array2.push(array[o]);
     }
